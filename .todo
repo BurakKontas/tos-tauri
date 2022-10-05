@@ -1,0 +1,3 @@
+BoilerPlate:
+    - Redux ile drawer açılıp kapatılması statesi yapılacak böylece her sayfa değişiminde drawer kapanmayacak
+    + Drawer anlaşılacak üstteki bardan kurtulmaya çalışılacak
