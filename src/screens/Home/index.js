@@ -1,16 +1,29 @@
-import { Link } from "@mui/material";
+import { Button } from "@mui/material";
 import React from "react";
 import Boilerplate from "../Boilerplate";
+
+//redux
+import { useSelector } from 'react-redux';
 
 import "./index.css";
 
 const Home = () => {
-    return <div>
+    const dimensions = useSelector((state) => {
+        return {
+            width:state.dimensions.width,
+            height:state.dimensions.height
+        }
+    });
+    return (
         <Boilerplate>
-            <p>Hello World</p>
-            <Link href="/test" variant="caption">To Test</Link>
+            <div className="main">
+                <p>Home</p>
+                <Button onClick={() => {
+                    console.log(dimensions)
+                }}>Get Dimensions</Button>
+            </div>
         </Boilerplate>
-    </div>
+    )   
 }
 
 export default Home;
