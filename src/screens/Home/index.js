@@ -20,7 +20,7 @@ const Home = () => {
                 <p>Home</p>
                 <Button onClick={() => {
                     console.log(dimensions)
-                }}>Get Dimensions</Button>
+                }}>Get Dimensionss</Button>
             </div>
         </Boilerplate>
     )   
